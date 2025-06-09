@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #222;
+}
+
+/* task1 */
+.task1-blog-container {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #e0f7f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+
+.task1-blog-container.task1-light {
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.task1-blog-container.task1-dark {
+    background-color: #222;
+    color: #f9f9f9;
+}
+
+.task1-blog-list {
+    margin-top: 1rem;
+}
+
+.task1-post {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.task1-post:hover {
+    background: #ddd;
+}
+
+.task1-blog-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.task1-input,
+.task1-textarea {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.task1-button {
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.task1-button:hover {
+    background-color: #0056b3;
+}
+
+/* task2 */
+.task2-todo-container {
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #f0f8ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.task2-todo-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.task2-todo-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.task2-input {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.task2-button {
+    padding: 0.6rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.task2-button:hover {
+    background-color: #0056b3;
+}
+
+.task2-todo-list {
+    margin-top: 1rem;
+}
+
+.task2-todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.2s;
+}
+
+.task2-todo-item:hover {
+    background-color: #f1f1f1;
+}
+
+.task2-todo-item.task2-completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task2-todo-item span {
+    flex: 1;
+    cursor: pointer;
+}
+
+.task2-todo-item button {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.task2-todo-item button:first-of-type {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.task2-todo-item button:first-of-type:hover {
+    background-color: #e0a800;
+}
+
+.task2-todo-item button:last-of-type {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.task2-todo-item button:last-of-type:hover {
+    background-color: #c82333;
+}
+
+.task2-filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.task2-filters button {
+    padding: 0.4rem 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.task2-filters .active,
+.task2-filters button:hover {
+    background-color: #495057;
+}
+
+/* task3 */
+.task3-weather-app {
+    max-width: 400px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    border-radius: 12px;
+    padding: 30px 20px;
+    color: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.task3-weather-app h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #1e3c72;
+}
+
+.task3-weather-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task3-weather-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.task3-weather-btn {
+    padding: 10px 15px;
+    background-color: #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.task3-weather-btn:hover {
+    background-color: #145a96;
+}
+
+.task3-weather-info {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(30, 60, 114, 0.2);
+    color: #1e3c72;
+}
+
+.task3-weather-info h2 {
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.task3-toggle-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.task3-toggle-btn:hover {
+    background-color: #d17c0a;
+}
+
+.task3-loader {
+    margin: 20px 0;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+.task3-error {
+    margin: 20px 0;
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+/* task4 */
+.task4-user-app {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.task4-user-app h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e2a78;
+}
+
+.task4-user-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.task4-user-input {
+    flex: 1;
+    min-width: 180px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #1e2a78;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.task4-user-input:focus {
+    border-color: #f39c12;
+}
+
+.task4-user-btn {
+    background-color: #1e2a78;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task4-user-btn:hover {
+    background-color: #f39c12;
+    color: #111;
+}
+
+.task4-user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task4-user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f7f9fc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(30, 42, 120, 0.05);
+}
+
+.task4-user-info {
+    flex: 1;
+    font-size: 16px;
+}
+
+.task4-user-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: #1e2a78;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.task4-user-actions button:hover {
+    color: #f39c12;
+}
+
+.task4-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30, 42, 120, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.task4-modal-content {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 30px;
+    width: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.task4-modal-content h2 {
+    margin-top: 0;
+    color: #1e2a78;
+}
+
+.task4-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1e2a78;
+    transition: color 0.3s ease;
+}
+
+.task4-modal-close:hover {
+    color: #f39c12;
+}
+
+.task4-error {
+    color: #e74c3c;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* task5 */
+.task5-product-app {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.task5-product-app h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.task5-filter-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.task5-filter-select {
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #3498db;
+    outline: none;
+    min-width: 160px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.task5-filter-select:hover,
+.task5-filter-select:focus {
+    border-color: #2980b9;
+}
+
+.task5-product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.task5-product-item {
+    background: #ecf0f1;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.task5-product-item:hover {
+    transform: translateY(-5px);
+}
+
+.task5-product-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.task5-product-category {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.task5-product-price {
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.task5-add-btn {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task5-add-btn:hover {
+    background-color: #1f618d;
+}
+
+.task5-cart-section {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.task5-cart-header {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #34495e;
+    text-align: center;
+}
+
+.task5-cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.task5-cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border-bottom: 1px solid #bdc3c7;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.task5-cart-total {
+    font-weight: 700;
+    font-size: 18px;
+    color: #27ae60;
+    text-align: right;
+}
