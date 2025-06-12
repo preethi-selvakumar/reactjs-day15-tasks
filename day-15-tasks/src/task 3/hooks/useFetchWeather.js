@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_KEY = "2d55ea157f63c1a4a8c986c41245b47d"; 
+const API_KEY = ""; 
 
 export const useFetchWeather = (city, unit) => {
     const [data, setData] = useState(null);
